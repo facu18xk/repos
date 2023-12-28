@@ -1,0 +1,5 @@
+The strong tag is usde when we want to indicate importance 
+The em tag is when we want emphasis that the text changes the actual meaning of the content 
+THe i tag is used to convey a different mood 
+THe b tag draws attention to word or section of content for utilitarian  purposes.
+
