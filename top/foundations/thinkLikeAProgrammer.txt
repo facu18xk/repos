@@ -1,0 +1,13 @@
+What really is think like a programmer
+Well, a lot of people said you should think like a programmer, but what they really want to say 
+We all face with problems in the every day life, and the way we aproach them is crucial.
+A algorithm of a npc problem solving look like
+* Do the solution don't even think about it 
+* If the solution doesn't work, try another one 
+But this is pretty unefficient and you waste a lot of time the way a programmer think is logical, they divide the big problem in little sub problems that are easy to solve, if he/she can't solve a little subproblem they gonna figure out because when they are solving the subproblems the mind start to connect the dots to come with a solution to the subproblem they cannot solve 
+They have a framework to solve problems 
+A framework for problem solving can look like.
+1. Undertstand the problem. You undertsand the problem when you can explain the problem in plain english 
+2. Plan, have a plan to resolve the problem don't jump in the solutino straight away. 
+3. Divide, the problems into sub problems this will help you to avoid frustration, and quitting, you should have the sub problems because you planned how to solve the big problem 
+
