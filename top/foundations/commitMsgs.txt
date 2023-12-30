@@ -1,2 +1,6 @@
 What are two benefits of having well-written commit messages and a good commit history?
+<<<<<<< HEAD
 The two main benefits are when yourself from the future watch your commit history her/him gonna understand what the hell you did. And other developers working on the project too. Also when you wanna get a job employers gonna be your commit history and if its well documented,you gonna stand up from other developers
+=======
+The two main benefits are when yourself from the future watch your commit history her/him gonna understand what the hell you did. And other developers working on the project too. Also when you wanna get a job employeers gonna be your commit history and if its well documented,you gonna stand up from other developers
+>>>>>>> e94ead70d58eb3e55a45f184bb5e2541c853be9d
