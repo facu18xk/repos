@@ -1,0 +1,6 @@
+[submodule "top/running_plans"]
+	path = top/running_plans
+	url = https://github.com/facu18xk/running_plans
+[submodule "top/foundations/running_plans"]
+	path = top/foundations/running_plans
+	url = https://github.com/facu18xk/running_plans
