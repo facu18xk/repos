@@ -4,3 +4,6 @@
 [submodule "top/foundations/running_plans"]
 	path = top/foundations/running_plans
 	url = https://github.com/facu18xk/running_plans
+[submodule "top/top/foundations/js/arrays/javascript-array-functions-practice"]
+	path = top/top/foundations/js/arrays/javascript-array-functions-practice
+	url = https://github.com/jamesqquick/javascript-array-functions-practice
