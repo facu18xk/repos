@@ -1,0 +1,139 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: "Norse";
+  src: local("Norse-bold.otf"),
+    url("../assets/Norse-Bold.otf");
+  font-weight: bold;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url('../assets/matrix.jpg') no-repeat;
+  min-width: 30%;
+}
+
+.left--container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50%;
+  background: rgba(1, 1, 1, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.container--logo {
+  width: 150px;
+  padding: 10px;
+}
+
+.container--title {
+  color: white;
+  font-family: Norse;
+  font-size: 5rem;
+}
+
+.left--atribution {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: .7rem;
+}
+
+.left--atribution a {
+  color: white;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f1f1f1;
+}
+
+.right--description {
+  margin: 0 5%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.right--form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+  padding:
+    2% 4%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.form--section {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+.form--description {
+  font-size: .8rem;
+  margin: 0;
+}
+
+.section--item {
+  display: flex;
+  flex-direction: column;
+}
+
+.section--item label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.section--item input {
+  width: 280px;
+  padding: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.394);
+  border-radius: 4px;
+}
+
+.section--item input:focus {
+  outline: none;
+  border: 1px solid rgb(0, 154, 34);
+}
+
+.section--item input:not(:focus):not(:placeholder-shown):invalid {
+  border: 1px solid rgba(255, 0, 0, 0.396);
+}
+
+.form--create {
+  width: 300px;
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  border-radius: 7px;
+  margin-top: 30px;
+  background-color: rgb(0, 154, 34);
+}
+
+.form--login {
+  font-weight: bold;
+  color: rgba(0, 154, 34);
+  text-decoration: none;
+}
+
+.invalid {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: red;
+  visibility: hidden;
+}

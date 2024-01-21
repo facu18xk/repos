@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get out of the matrix</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="left">
+            <div class="left--container">
+                <img class="container--logo" src="./assets/odin.png" alt="The odin project logo">
+                <h1 class="container--title">Odin</h1>
+            </div>
+            <div class="left--atribution">
+                <span>Photo by <a target="_blank" rel="noopener noreferrer"
+                        href="https://unsplash.com/@markusspiske">Markus
+                        Spiske</a>on <a href="https://unsplash.com/" target="_blank"
+                        rel="noopener noreferrer">Unsplash</a></span>
+            </div>
+        </section>
+        <section class="right">
+            <div class="right--description">
+                <p>Escape the digital chains of the matrix, liberate your mind from the binary enslavement. Embrace
+                    freedom, break free
+                    from the algorithmic constraints. Awaken to a reality beyond the code.</p>
+                <p>Follow the rabbit hole</p>
+            </div>
+            <form action="https://www.matrix.com" method="post" class="right--form">
+                <h3 class="form--title">Let's escape</h3>
+                <p class="form--description">If the field have a <span aria-label="required">*</span> it's because that
+                    field is mandatory</p>
+                <ul class="form--section">
+                    <li class="section--item">
+                        <label for="name">First Name <span aria-label="required">*</span>
+                        </label>
+                        <input type="text" placeholder="" autocomplete="name" name="first_name" required minlength="2"
+                            maxlength="25">
+                    </li>
+                    <li class="section--item">
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="last_name" minlength="2" maxlength="25">
+                    </li>
+                </ul>
+                <ul class="form--section">
+                    <li class="section--item">
+                        <label for="email">Email <span aria-label="required">*</span></label>
+                        <input type="email" required autocomplete="email" placeholder="" name="email" id="email">
+                    </li>
+                    <li class="section--item">
+                        <label for="phoneNumber">Phone number</label>
+                        <input type="tel" name="phone_number" autocomplete="mobile" id="phoneNumber"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </li>
+                </ul>
+                <ul class="form--section">
+                    <li class="section--item">
+                        <label for="password">Password <span aria-label="required">*</span></label>
+                        <input type="password" autocomplete="new-password" name="password" id="password" required
+                            placeholder="" minlength="8">
+                        <span class="invalid">Passwords don't match</span>
+                    </li>
+                    <li class="section--item">
+                        <label for="passwordConfirmation">Confirm password <span aria-label="required">*</span></label>
+                        <input type="password" name="password_confirmation" id="passwordConfirmation" minlength="8"
+                            placeholder="" required>
+                    </li>
+                </ul>
+                <button class="form--create">Create Account</button>
+                <p>Already have an account? <a href="#" class="form--login">Log in</a></p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
