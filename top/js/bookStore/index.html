@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="./main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header--title">Books</h1>
+    <button class="header--new">Add new book</button>
+  </header>
+  <main class="books">
+    <div class="book">
+      <div class="book--cover">
+        <img src="./books/1984.jpg" alt="1984 book cover">
+      </div>
+      <div class="book--info">
+        <p class="info--genre">Fiction</p>
+        <h2 class="info--title">1984</h2>
+        <p class="info--author">by George Orwell</p>
+        <p class="info--status">Status: To read</p>
+        <div class="info--buttons">
+          <button class="buttons--button remove">Remove</button>
+          <button class="buttons--button changeStatus">Read</button>
+        </div>
+      </div>
+    </div>
+    <div class="book">
+      <div class="book--cover">
+        <img src="./books/1984.jpg" alt="1984 book cover">
+      </div>
+      <div class="book--info">
+        <p class="info--genre">Fiction</p>
+        <h2 class="info--title">1984</h2>
+        <p class="info--author">by George Orwell</p>
+        <p class="info--status">Status: To read</p>
+        <div class="info--buttons">
+          <button class="buttons--button">Remove</button>
+          <button class="buttons--button">Read</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <dialog class="addBook">
+    <h4>Add a new book</h4>
+    <label for="name">Name</label>
+    <input type="text" id="name" required minlength="2">
+    <label for="author">Author</label>
+    <input type="text" id="author" required>
+    <label for="genre">Genre</label>
+    <input type="text" id="genre" required>
+    <label for="status">Status</label>
+    <select required id="status">
+      <option value="read">Read</option>
+      <option selected value="toRead">To read</option>
+    </select>
+    <button class="newBook">Add book</button>
+  </dialog>
+</body>
+
+</html>
