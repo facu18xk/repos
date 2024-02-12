@@ -2,11 +2,7 @@ const booksContainer = document.querySelector('.books');
 const newBookBtn = document.querySelector('.header--new');
 const addBookBtn = document.querySelector('.newBook');
 const popup = document.querySelector('.addBook');
-const myLibrary = [
-  new Book("Can't hurt me", "David Goggings", "./books/cantHurtMe.jpg", "Biography", "Read"), new Book("Brave new World", "Aldous Huxley", "./books/braveNewWorld.jpg", "Fiction", "Read"), new Book("Republic", "Plato", "./books/republic.jpeg", "Philosophy", "Read"),
-  new Book("The world as I see it", "Albert Einstein", "./books/theWorldAsISeeIt.jpg", "Essay", "To read"),
-  new Book("Never Finished", "David Goggings", "./books/neverFinished.jpg", "Biography", "Read")
-];
+
 /**
  * Create book constructor with the properties of genre, title, author, status, with the method for rendering the card in the prototype 
  */
@@ -65,28 +61,33 @@ function changeStatus(book) {
 /**
  * Constructor of books with name, genre, cover, author, status
  */
-function Book(name, author, cover, genre, status) {
-  this.name = name;
-  this.author = author;
-  this.cover = cover;
-  this.genre = genre;
-  this.status = status;
+class Book {
+  constructor(name, author, cover, genre, status) {
+    this.name = name;
+    this.author = author;
+    this.cover = cover;
+    this.genre = genre;
+    this.status = status;
+  }
+  //Return a button if the status is equal toRead or return an empty string otherwise 
+  buttonStatus() {
+    if (this.status === "Read") return "";
+    else return `<button class="buttons--button changeStatus" data-name="${this.name}">Read</button>`
+  }
+  render() {
+    renderBook(this, booksContainer);
+    setButton(this);
+    if (this.status === "To read") changeStatus(this);
+  }
+  remove(index) {
+    booksContainer.removeChild(booksContainer.childNodes[index]);
+  }
 }
-//Return a button if the status is equal toRead or return an empty string otherwise 
-Book.prototype.buttonStatus = function () {
-  if (this.status === "Read") return "";
-  else return `<button class="buttons--button changeStatus" data-name="${this.name}">Read</button>`
-}
-//Render the book
-Book.prototype.render = function () {
-  renderBook(this, booksContainer);
-  setButton(this);
-  if (this.status === "To read") changeStatus(this);
-}
-//Remove the book
-Book.prototype.remove = function (index) {
-  booksContainer.removeChild(booksContainer.childNodes[index]);
-}
+const myLibrary = [
+  new Book("Can't hurt me", "David Goggings", "./books/cantHurtMe.jpg", "Biography", "Read"), new Book("Brave new World", "Aldous Huxley", "./books/braveNewWorld.jpg", "Fiction", "Read"), new Book("Republic", "Plato", "./books/republic.jpeg", "Philosophy", "Read"),
+  new Book("The world as I see it", "Albert Einstein", "./books/theWorldAsISeeIt.jpg", "Essay", "To read"),
+  new Book("Never Finished", "David Goggings", "./books/neverFinished.jpg", "Biography", "Read")
+];
 //Remove the book when clicked in remove
 //Add a new book with a popup
 newBookBtn.addEventListener('click', () => {
